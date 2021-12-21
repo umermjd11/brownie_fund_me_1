@@ -9,7 +9,7 @@ def fund():
     entrance_fee = fund_me.getEntranceFee()
     print(f"The current entry fee is {entrance_fee}")
     print("Funding")
-    fund_me.fund({"from": account, "value": entrance_fee})
+    fund_me.fund({"from": account, "value": entrance_fee+1000})
 
 
     print(f"The current balance of contract in usd is {fund_me.balance()}") 
